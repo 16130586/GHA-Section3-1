@@ -14,3 +14,6 @@ jobs:
     steps:
     - name: Output issue event
       run: echo '${{toJson(github.event)}}'
+
+    - name: Output github context
+      run: echo '${{toJson(github)}}'
